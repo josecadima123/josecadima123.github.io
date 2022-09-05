@@ -39,11 +39,12 @@
         <P>esta seccion devuelve si un numero es par o es impar lo devuelve de tres maneras diferentes</P>
         <input type="text" id="numero"><input type="button" onclick="
         var numero=parseFloat(document.getElementById('numero').value);
+        alert(paresImpares(numero));
         document.getElementById('respuestaNumero').value=paresImpares(numero);
         document.getElementById('respuestaParrafo').innerHTML=paresImpares(numero);" 
         value="EVALUAR EL NUMERO">
         <input type="text" id="respuestaNumero">
-        <h1>RESPUESTA</h1>
+        <h3>RESPUESTA:</h3>
         <p id="respuestaParrafo"></p>
     </section>
 </body>
