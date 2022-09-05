@@ -34,6 +34,19 @@
         <p>para calcular el perimetro de un triangulo sumamos las longitudes de sus tres lados</p>
         <input type="text" id="lado1"><input type="text" id="lado2"><input type="text" id="lado3"><input type="button" value="CALCULAR PERIMETRO" onclick="calcularPerimetro();"><input type="text" id="perimetro">
     </section>
+    <section id="parImpar">
+        <h1>NUMEROS PARES E IMPARES</h1>
+        <P>esta seccion devuelve si un numero es par o es impar lo devuelve de tres maneras diferentes</P>
+        <input type="text" id="numero"><input type="button" onclick="
+        var numero=parseFloat(document.getElementById('numero').value);
+        alert(paresImpares(numero));
+        document.getElementById('respuestaNumero').value=paresImpares(numero);
+        document.getElementById('respuestaParrafo').innerHTML=paresImpares(numero);" 
+        value="EVALUAR EL NUMERO">
+        <input type="text" id="respuestaNumero">
+        <h1>RESPUESTA</h1>
+        <p id="respuestaParrafo"></p>
+    </section>
 
     
 

@@ -20,8 +20,20 @@ function calcularArea(){
 function calcularPerimetro(){
     var lado1=parseFloat(document.getElementById('lado1').value);
     var lado2=parseFloat(document.getElementById('lado2').value);
-    var lado3=parseFloat(document.getAnimations('lado3').value);
+    var lado3=parseFloat(document.getElementById('lado3').value);
     var perimetro=lado1+lado2+lado3;
     var texto=perimetro;
     document.getElementById('perimetro').value=texto; 
+}
+function paresImpares(numero){
+    var texto;
+    if(numero%2==0)
+    {
+        texto="el numero es par";
+    }
+    else 
+    {
+        texto="el numero es impar";
+    }
+    return texto;
 }
