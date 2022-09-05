@@ -12,18 +12,22 @@
 </head>
 <body>
     <section id="convertirQuintales"> 
-    <h1>CONVERTIR DE QUINTALES A KILOGRAMOS</h1>
-    <P>Factor de conversion 1 quintal = 100 kg </P>
-    <input type="text" name="quintales" id="quintales"/>
-    <input type="button" value="CONVERTIR" onclick="convertirQuintales();"/>
-    <input type="text" name="kilogramos" id="kilogramos"/>
+        <h1>CONVERTIR DE QUINTALES A KILOGRAMOS</h1>
+        <P>Factor de conversion 1 quintal = 100 kg </P>
+        <label>Ingrese el valor en en quintales:</label><br>
+        <input type="text" name="quintales" id="quintales"/><br>
+        <input type="button" value="CONVERTIR" onclick="convertirQuintales();"/><br>
+        <label for="kilogramos">El resultado en kilogramos es:</label> <br>
+        <input type="text" name="kilogramos" id="kilogramos"/><br>
     </section>
     <section id="convertirFarenheit">
         <h1>CONVERTIR GRADOS FARENHEIT A CELSIUS</h1>
         <P>Para convertir de grados farenheit a celsius usamos la formula Celsius=(farenheit-32)/1.8</P>
-        <input type="text" id="farenheit">
-        <input type="button" value="CONVERTIR" onclick="convertirFarenheit();"> 
-        <input type="text" id="celsius">
+        <label for="farenheit">Ingrese el valor en grados farenheit</label><br>
+        <input type="text" id="farenheit"><br>
+        <input type="button" value="CONVERTIR" onclick="convertirFarenheit();"><br> 
+        <label for="">El valor en grado Celsius es:</label><br>
+        <input type="text" id="celsius"><br>
     </section>
     <section id="areaTriangulo">
         <h1>CALCULAR EL AREA DE UN TRIANGULO</h1>
