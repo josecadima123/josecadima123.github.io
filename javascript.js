@@ -29,11 +29,11 @@ function paresImpares(numero){
     var texto;
     if(numero%2==0)
     {
-        texto="el numero es par";
+        texto="El numero es par";
     }
     else 
     {
-        texto="el numero es impar";
+        texto="El numero es impar";
     }
     return texto;
 }
