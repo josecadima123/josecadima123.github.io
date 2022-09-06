@@ -32,25 +32,39 @@
     <section id="areaTriangulo">
         <h1>CALCULAR EL AREA DE UN TRIANGULO</h1>
         <p>para calcular el area de un triangulo usamos la formula: Area=Base*Altura/2</p>
-        
-        <input type="text" id="base"><input type="" id="altura"><button onclick="calcularArea();" > CALCULAR AREA</button> 
+        <label for="base">Ingrese el valor de la base:</label><br>
+        <input type="text" id="base"><br>
+        <label for="">Ingrese el valor de la altura</label><br>
+        <input type="" id="altura"><br>
+        <button onclick="calcularArea();" > CALCULAR AREA</button><br>  
+        <label for="">El valor del area es:</label><br>
         <input type="text" id="area">
     </section>
     <section id="perimetroTriangulo">
         <h1>CALCULAR EL PERIMETRO DE UN TRIANGULO</h1>
         <p>para calcular el perimetro de un triangulo sumamos las longitudes de sus tres lados</p>
-        <input type="text" id="lado1"><input type="text" id="lado2"><input type="text" id="lado3"><input type="button" value="CALCULAR PERIMETRO" onclick="calcularPerimetro();"><input type="text" id="perimetro">
+        <label for="">Ingrese la longitud del lado 1</label><br>
+        <input type="text" id="lado1"><br>
+        <label for="">Ingrese la longitud del lado 2</label><br>
+        <input type="text" id="lado2"><br>
+        <label for="">Ingrese la longitud del lado 3</label><br>
+        <input type="text" id="lado3"><br>
+        <input type="button" value="CALCULAR PERIMETRO" onclick="calcularPerimetro();"><br>
+        <label for="">El perimetro del triangulo es:</label><br>
+        <input type="text" id="perimetro">
     </section>
     <section id="parImpar">
         <h1>NUMEROS PARES E IMPARES</h1>
-        <P>esta seccion devuelve si un numero es par o es impar lo devuelve de tres maneras diferentes</P>
-        <input type="text" id="numero"><input type="button" onclick="
+        <P>Esta seccion devuelve si un numero es par o es impar lo devuelve de tres maneras diferentes</P>
+        <label for="">Ingrese un numero:</label><br>
+        <input type="text" id="numero"><br>
+        <input type="button" onclick="
         var numero=parseFloat(document.getElementById('numero').value);
         alert(paresImpares(numero));
         document.getElementById('respuestaNumero').value=paresImpares(numero);
         document.getElementById('respuestaParrafo').innerHTML=paresImpares(numero);" 
-        value="EVALUAR EL NUMERO">
-        <input type="text" id="respuestaNumero">
+        value="EVALUAR EL NUMERO"><br>
+        <input type="text" id="respuestaNumero"><br>
         <h3>RESPUESTA:</h3>
         <p id="respuestaParrafo"></p>
     </section>
